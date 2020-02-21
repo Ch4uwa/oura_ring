@@ -1,2 +1,8 @@
 #Oura rings
-take data from multiple accounts, put into postgredb
+Sensor device that collects data about users health
+
+###Solve
+Collect data from multiple user accounts\
+Save into postgreSQL db
+
+
