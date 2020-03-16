@@ -1,1 +1,5 @@
-/.env
+.env
+/oura-venv
+/.vscode
+/.idea
+/__pycache__
