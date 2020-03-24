@@ -1,9 +1,7 @@
 .env
-/oura-venv/*
-/oura-venv
 /.vscode
 /.idea
 /__pycache__
 /venv/
-/oura-venv/
-data.txt
+/oura-venv/lib/*
+old_files/token.json

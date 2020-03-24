@@ -1,18 +1,18 @@
 from configparser import ConfigParser
 
 
-def config(filename='database.ini', section='postgresql'):
+def config(filename=None, section=None):
     # Create Parser
     parser = ConfigParser()
     # Read file
     parser.read(filename)
 
-    db = {}
+    values = {}
 
     if parser.has_section(section):
         params = parser.items(section)
         for param in params:
-            db[param[0]] = param[1]
+            values[param[0]] = param[1]
     else:
         raise Exception('Section {0} not found in file {1}'.format(section, filename))
-    return db
+    return values
