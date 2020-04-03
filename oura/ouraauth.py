@@ -55,7 +55,6 @@ class OuraClient:
             token_updater=refresh_callback
         )
 
-    # Todo Add requests
     def user_info(self):
         url = '{}/v1/userinfo'.format(self.API_ENDPOINT)
         return self._make_request(url=url)
